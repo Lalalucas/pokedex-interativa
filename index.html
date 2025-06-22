@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pokédex interativa com HTML, CSS e JavaScript consumindo a PokeAPI" />
+  <meta name="author" content="Lucas Gabriel de Morais" />
+  <title>Pokedex Interativa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>🔍 Pokédex Interativa</h1>
+    <p>Explore todos os Pokémon da primeira geração!</p>
+  </header>
+  <main>
+    <section class="search-box">
+      <input type="text" id="search id="search-button">🔎 Buscar</button>
+    </section>
+    <section class="pokedex" id="pokedex">
+      <div class="loader" id="loader"></div>
+    </section>
+    <div class="pagination">
+      <button id="btn-prev" aria-label="Página anterior">⬅️ Anterior</button>
+      <span id="page-info"></span>
+      <button id="btn-next" aria-label="Próxima página">Próximo ➡️</button>
+    </div>
+  </main>
+  <footer>
+    <p>Desenvolvido por Lucas Gabriel de Morais | Projeto exclusivo D>
+    <p><a href="https://github.com/digitalinnovationone/js-developer-pokedex" target="_blank" rel="noopener">🔗 Repositório base no GitHub</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
