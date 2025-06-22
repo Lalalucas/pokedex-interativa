@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pokédex interativa com HTML, CSS e JavaScript consumindo a PokeAPI" />
   <meta name="author" content="Lucas Gabriel de Morais" />
-  <title>Pokedex Interativa</title>
+  <meta name="keywords" content="Pokédex, Pokémon, PokeAPI, JavaScript, HTML, CSS" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Pokédex Interativa</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 </head>
 <body>
   <header>
@@ -16,19 +19,20 @@
   </header>
   <main>
     <section class="search-box">
-      <input type="text" id="search id="search-button">🔎 Buscar</button>
+      <input type="text" id="search-input" placeholder="Buscar Pokémon por nome ou ID..." autocomplete="off" aria-label="Buscar Pokémon" />
+      <button id="search-button" aria-label="Buscar">🔎 Buscar</button>
     </section>
     <section class="pokedex" id="pokedex">
-      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader" role="status" aria-hidden="true"></div>
     </section>
     <div class="pagination">
-      <button id="btn-prev" aria-label="Página anterior">⬅️ Anterior</button>
-      <span id="page-info"></span>
+      <button id="btn-prev" aria-label="Página anterior" disabled>⬅️ Anterior</button>
+      <span id="page-info" role="status" aria-live="polite"></span>
       <button id="btn-next" aria-label="Próxima página">Próximo ➡️</button>
     </div>
   </main>
   <footer>
-    <p>Desenvolvido por Lucas Gabriel de Morais | Projeto exclusivo D>
+    <p>Desenvolvido por Lucas Gabriel de Morais | Projeto exclusivo DIO.me</p>
     <p><a href="https://github.com/digitalinnovationone/js-developer-pokedex" target="_blank" rel="noopener">🔗 Repositório base no GitHub</a></p>
   </footer>
   <script src="script.js"></script>
